@@ -1,0 +1,123 @@
+/* Seteo de fuente application */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    /* default font family and font weight */
+    --fnt-poppins: 'Poppins', sans-serif;
+
+    --fnt-extraLight: 200;
+    --fnt-light: 300;
+    --fnt-regular: 400;
+    --fnt-medium: 500;
+    --fnt-semiBold: 600;
+    --fnt-bold: 700;
+
+    /* palet colors */
+    --color-one: #F2D0B7;
+    --color-two: #E0C1AD;
+    --color-three: #D7B08F;
+    --color-four: #EEE6D2;
+    --color-five: #E5E1D5;
+    --color-six: #C5C0AA;
+
+    /* auxiliar palet color */
+    --color-black: #1A1A1A;
+    --color-white: #F7F7F7;
+    --color-gray1: #CFCFCF;
+    --color-gray2: #a8a8a8;
+    --color-gray3: #797979;
+    --color-gray4: #494949;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fnt-poppins);
+    color: var(--color-black);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+input {
+    font-family: var(--fnt-poppins);
+    padding: 5px 20px;
+}
+
+input::placeholder {
+    font-family: var(--fnt-poppins);
+    color: var(--color-gray2);
+}
+
+i {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* globalizando display flex */
+.dflex {
+    display: flex;
+}
+
+/* section de aling-items */
+.daling-center {
+    align-items: center;
+}
+
+.daling-end {
+    align-items: flex-end;
+}
+
+.daling-start {
+    align-items: flex-start;
+}
+
+/* section de flex-direction */
+.ddirection-column {
+    flex-direction: column;
+}
+.ddirection-columnreverse {
+    flex-direction: column-reverse;
+}
+
+.ddirection-rowreverse {
+    flex-direction: row-reverse;
+}
+
+/* section de justify-content */
+.djustify-center {
+    justify-content: center;
+}
+
+.djustify-spacebetween {
+    justify-content: space-between;
+}
+
+.djustify-spaceevenly {
+    justify-content: space-evenly;
+}
+
+.djustify-spacearound {
+    justify-content: space-around;
+}
+
+.djustify-end {
+    justify-content: flex-end;
+}
+
+.djustify-start {
+    justify-content: flex-start;
+}
